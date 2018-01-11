@@ -13,9 +13,9 @@ public class App {
         selection = sc.nextInt();
 
         if (selection < 5) {
-            System.out.println("Enter first number:");
+            System.out.println("Enter first number :");
             num1 = sc.nextDouble();
-            System.out.println("Enter second number:");
+            System.out.println("Enter second number :");
             num2 = sc.nextDouble();
             System.out.print("Ans : ");
         }
