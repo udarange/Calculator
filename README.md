@@ -35,5 +35,4 @@ First select option.
 Then enter first number,
 Next second number.
 
-######Version 1.0
-2018
+Version 1.0
