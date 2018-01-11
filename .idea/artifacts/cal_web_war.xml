@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="cal-web:war">
-    <output-path>$PROJECT_DIR$/modules/cal-web/target</output-path>
-    <root id="archive" name="cal-web.war">
-      <element id="artifact" artifact-name="cal-web:war exploded" />
-    </root>
-  </artifact>
-</component>
