@@ -23,7 +23,9 @@ Enter second number:
 3
 Ans : 26.00
 ```
-
+First select option.
+Then enter first number,
+Next second number.
 ## Built With
 
 * [JAVA](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Java 1.8 used
