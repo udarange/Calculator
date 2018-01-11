@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="294f6ead-d4b4-40ca-9be8-9d5427068a49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/cal-core/README.md" afterPath="$PROJECT_DIR$/modules/cal-core/README.md" />
-    </list>
+    <list default="true" id="294f6ead-d4b4-40ca-9be8-9d5427068a49" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/modules/cal-web/target/" />
     <ignored path="$PROJECT_DIR$/modules/cal-util/target/" />
     <ignored path="$PROJECT_DIR$/modules/target/" />
@@ -653,12 +650,12 @@
       <workItem from="1515501471135" duration="443000" />
       <workItem from="1515640014668" duration="3907000" />
       <workItem from="1515645999163" duration="7025000" />
-      <workItem from="1515653686290" duration="2401000" />
+      <workItem from="1515653686290" duration="2667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16858000" />
+    <option name="totallyTimeSpent" value="17124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
