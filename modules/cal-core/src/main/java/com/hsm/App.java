@@ -6,7 +6,7 @@ public class App {
     public static void main(String[] args) {
         double num1 = 0;
         double num2 = 0;
-        double ans = 0;
+        double ans;
         System.out.println("Enter your selection: \n 1 for Addition \n 2 for substraction \n 3 for Multiplication \n 4 for division");
         Scanner sc = new Scanner(System.in);
         int selection;
@@ -17,7 +17,7 @@ public class App {
             num1 = sc.nextDouble();
             System.out.println("Enter second number :");
             num2 = sc.nextDouble();
-            System.out.print("Ans : ");
+            System.out.print("Answer : ");
         }
 
         switch (selection) {
