@@ -1,4 +1,4 @@
-# Basic Calculator
+# Calculator Core
 
 This project was originally written using Intellij IDEA 2017.1. This calculator is an example of operating four basic operation which used in calculator.
 
