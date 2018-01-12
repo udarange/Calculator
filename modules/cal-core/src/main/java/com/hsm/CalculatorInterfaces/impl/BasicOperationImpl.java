@@ -1,4 +1,3 @@
-
 /*
  * (C) Copyright 2010-2018 hSenid Mobile Solutions (Pvt) Limited.
  * All Rights Reserved.
@@ -11,14 +10,14 @@
  * property rights in these materials.
  */
 
-package com.hsm;
+package com.hsm.CalculatorInterfaces.impl;
 
-import com.hsm.CalculatorInterfaces.CalculatorService;
+import com.hsm.CalculatorInterfaces.BasicOperationService;
 
 /**
- * Basic Calculator Operators.
+ * Basic Calculator Operation Implementation.
  */
-public class Operators implements CalculatorService {
+public class BasicOperationImpl implements BasicOperationService {
     @Override
     public double add(double num1, double num2) {
         return num1 + num2;
@@ -37,5 +36,15 @@ public class Operators implements CalculatorService {
     @Override
     public double divide(double num1, double num2) {
         return num1 / num2;
+    }
+
+    @Override
+    public int mod(int number, int mode) {
+        return number % mode;
+    }
+
+    @Override
+    public double sqrt(int number) {
+        return Math.sqrt(number);
     }
 }
