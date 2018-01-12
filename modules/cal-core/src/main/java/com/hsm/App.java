@@ -50,6 +50,9 @@ public class App {
                     ans = operators.divide(num1, num2);
                     System.out.printf("Answer : %.2f\n", ans);
                     break;
+                default:
+                    // do nothing
+                    break;
             }
         } else {
             System.out.println("Illigal Operation");
