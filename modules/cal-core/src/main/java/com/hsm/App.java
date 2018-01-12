@@ -10,6 +10,7 @@ public class App {
 
         System.out.println("Enter your selection: \n 1 for Addition \n 2 for substraction \n 3 for Multiplication \n 4 for division\n 0 for EXIT");
         Scanner sc = new Scanner(System.in);
+
         int selection;
         selection = sc.nextInt();
 
@@ -18,25 +19,24 @@ public class App {
             num1 = sc.nextDouble();
             System.out.print("Enter second number : ");
             num2 = sc.nextDouble();
-            System.out.print("Answer : ");
 
             Operators operators = new Operators();
             switch (selection) {
                 case 1:
                     ans = operators.add(num1, num2);
-                    System.out.printf("%.2f\n", ans);
+                    System.out.printf("Answer : %.2f\n", ans);
                     break;
                 case 2:
                     ans = operators.subtract(num1, num2);
-                    System.out.printf("%.2f\n", ans);
+                    System.out.printf("Answer : %.2f\n", ans);
                     break;
                 case 3:
                     ans = operators.multiply(num1, num2);
-                    System.out.printf("%.2f\n", ans);
+                    System.out.printf("Answer : %.2f\n", ans);
                     break;
                 case 4:
                     ans = operators.divide(num1, num2);
-                    System.out.printf("%.2f\n", ans);
+                    System.out.printf("Answer : %.2f\n", ans);
                     break;
             }
         } else if (selection != 0) {
