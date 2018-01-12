@@ -16,11 +16,11 @@ public class App {
         double num2;
         double ans;
 
-        System.out.println("Enter your selection: \n" +
-                " 1 for Addition \n" +
-                " 2 for substraction \n" +
-                " 3 for Multiplication \n" +
-                " 4 for division");
+        System.out.println("Enter your selection: \n"
+                + " 1 for Addition \n"
+                + " 2 for substraction \n"
+                + " 3 for Multiplication \n"
+                + " 4 for division");
 
         Scanner sc = new Scanner(System.in);
         int selection;
