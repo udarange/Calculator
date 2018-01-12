@@ -40,7 +40,7 @@ public class App {
                     break;
             }
         } else if (selection != 0) {
-            System.out.println("Illigal Operation");
+            System.out.println("Illigal Operation. Try Again");
         }
     }
 }
