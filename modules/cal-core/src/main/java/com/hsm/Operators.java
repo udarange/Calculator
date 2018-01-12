@@ -11,7 +11,7 @@ package com.hsm;
 import com.hsm.CalculatorInterfaces.CalculatorService;
 
 /**
- * Calculator Operators.
+ * Basic Calculator Operators.
  */
 public class Operators implements CalculatorService {
     @Override
