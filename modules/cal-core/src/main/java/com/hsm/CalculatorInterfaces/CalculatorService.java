@@ -1,9 +1,14 @@
+
 /*
- * Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
- * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan. 
- * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna. 
- * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus. 
- * Vestibulum commodo. Ut rhoncus gravida arcu. 
+ * (C) Copyright 2010-2018 hSenid Mobile Solutions (Pvt) Limited.
+ * All Rights Reserved.
+ *
+ * These materials are unpublished, proprietary, confidential source code of
+ * hSenid Mobile Solutions (Pvt) Limited and constitute a TRADE SECRET
+ * of hSenid Mobile Solutions (Pvt) Limited.
+ *
+ * hSenid Mobile Solutions (Pvt) Limited retains all title to and intellectual
+ * property rights in these materials.
  */
 
 package com.hsm.CalculatorInterfaces;
