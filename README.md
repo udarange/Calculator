@@ -9,7 +9,7 @@ This project was originally written using Intellij IDEA 2017.1. This calculator 
 
 ## Getting Started
 
-If you use the executable "cal-core-1.0-SNAPSHOT.jar" file, you can type "java -jar /your_calculator_directory/SimpleJavaCalculator.jar" in your terminal.
+If you use the executable "cal-core-1.0-SNAPSHOT.jar" file, you can type "java -jar /your_calculator_directory/cal-core-1.0-SNAPSHOT.jar" in your terminal.
 <br>
 Or
 <br>
@@ -31,8 +31,6 @@ Enter second number:
 3
 Ans : 26.00
 ```
-First select option.
-Then enter first number,
-Next second number.
+First you should select option. Then enter the first number and second number.
 
-Version 1.0
+sVersion 1.0
