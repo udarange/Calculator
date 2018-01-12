@@ -8,9 +8,13 @@ public class App {
         double num2;
         double ans;
 
-        System.out.println("Enter your selection: \n 1 for Addition \n 2 for substraction \n 3 for Multiplication \n 4 for division\n 0 for EXIT");
-        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your selection: \n" +
+                " 1 for Addition \n" +
+                " 2 for substraction \n" +
+                " 3 for Multiplication \n" +
+                " 4 for division");
 
+        Scanner sc = new Scanner(System.in);
         int selection;
         selection = sc.nextInt();
 
@@ -39,7 +43,7 @@ public class App {
                     System.out.printf("Answer : %.2f\n", ans);
                     break;
             }
-        } else if (selection != 0) {
+        } else {
             System.out.println("Illigal Operation");
         }
     }
