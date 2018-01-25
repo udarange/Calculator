@@ -34,12 +34,18 @@ public class BasicOperationImpl implements BasicOperationService {
     }
 
     @Override
-    public double divide(double num1, double num2) {
+    public double divide(double num1, double num2) throws IllegalArgumentException {
+        if (num2 == 0) {
+            throw new IllegalArgumentException("Cannot divide by 0!");
+        }
         return num1 / num2;
     }
 
     @Override
-    public int mod(int number, int mode) {
+    public int mod(int number, int mode) throws ArithmeticException {
+        if (mode == 0) {
+            throw new ArithmeticException("Mode by 0!");
+        }
         return number % mode;
     }
 

@@ -18,61 +18,69 @@ import com.hsm.CalculatorInterfaces.impl.BasicOperationImpl;
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalArgumentException {
         double num1;
         double num2;
         double ans;
 
-        System.out.println("Enter your selection: \n"
-                + " + for Addition \n"
-                + " - for substraction \n"
-                + " * for Multiplication \n"
-                + " / for division");
+        while (true) {
+            System.out.println("Enter your selection: \n"
+                    + " + for Addition \n"
+                    + " - for substraction \n"
+                    + " * for Multiplication \n"
+                    + " / for division");
 
-        Scanner sc = new Scanner(System.in);
-        String selection;
-        selection = sc.nextLine();
+            Scanner sc = new Scanner(System.in);
+            String selection;
+            selection = sc.nextLine();
 
 
-        BasicOperation operation = null;
-        if (selection.equals("+")) {
-            operation = BasicOperation.ADD;
-        } else if (selection.equals("-")) {
-            operation = BasicOperation.SUBTRACT;
-        } else if (selection.equals("*")) {
-            operation = BasicOperation.MULTIPLICATION;
-        } else if (selection.equals("/")){
-            operation = BasicOperation.DIVISION;
-        }else {
-            System.out.println("Illigal Operation");
-        }
+            BasicOperation operation = null;
+            if (selection.equals("+")) {
+                operation = BasicOperation.ADD;
+            } else if (selection.equals("-")) {
+                operation = BasicOperation.SUBTRACT;
+            } else if (selection.equals("*")) {
+                operation = BasicOperation.MULTIPLICATION;
+            } else if (selection.equals("/")) {
+                operation = BasicOperation.DIVISION;
+            } else {
+                System.out.println("Illigal Operation");
+                break;
+            }
 
-        System.out.print("Enter first number : ");
-        num1 = sc.nextDouble();
-        System.out.print("Enter second number : ");
-        num2 = sc.nextDouble();
+            System.out.print("Enter first number : ");
+            num1 = sc.nextDouble();
+            System.out.print("Enter second number : ");
+            num2 = sc.nextDouble();
 
-        BasicOperationImpl basicOperation = new BasicOperationImpl();
-        switch (operation) {
-            case ADD:
-                ans = basicOperation.add(num1, num2);
-                System.out.printf("Answer : %.2f\n", ans);
-                break;
-            case SUBTRACT:
-                ans = basicOperation.subtract(num1, num2);
-                System.out.printf("Answer : %.2f\n", ans);
-                break;
-            case MULTIPLICATION:
-                ans = basicOperation.multiply(num1, num2);
-                System.out.printf("Answer : %.2f\n", ans);
-                break;
-            case DIVISION:
-                ans = basicOperation.divide(num1, num2);
-                System.out.printf("Answer : %.2f\n", ans);
-                break;
-            default:
-                // do nothing
-                break;
+            BasicOperationImpl basicOperation = new BasicOperationImpl();
+            switch (operation) {
+                case ADD:
+                    ans = basicOperation.add(num1, num2);
+                    System.out.printf("Answer : %.2f\n", ans);
+                    break;
+                case SUBTRACT:
+                    ans = basicOperation.subtract(num1, num2);
+                    System.out.printf("Answer : %.2f\n", ans);
+                    break;
+                case MULTIPLICATION:
+                    ans = basicOperation.multiply(num1, num2);
+                    System.out.printf("Answer : %.2f\n", ans);
+                    break;
+                case DIVISION:
+                    if (num2 != 0) {
+                        ans = basicOperation.divide(num1, num2);
+                        System.out.printf("Answer : %.2f\n", ans);
+                    } else {
+                        System.out.println("Cannot divide by 0!");
+                    }
+                    break;
+                default:
+                    // do nothing
+                    break;
+            }
+            break;
         }
     }
 }

@@ -34,7 +34,7 @@ public interface BasicOperationService {
     /**
      * Division operation for two numbers
      */
-    double divide (double num1, double num2) ;
+    double divide (double num1, double num2) throws IllegalArgumentException;
 
     /**
      * Mod operation of a numbers

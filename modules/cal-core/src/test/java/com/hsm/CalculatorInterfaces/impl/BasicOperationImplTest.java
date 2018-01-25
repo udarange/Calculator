@@ -17,23 +17,39 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
+ * Junit test cases for calculator
  * Created by archana on 1/12/18.
  */
 public class BasicOperationImplTest {
     BasicOperationImpl operation = new BasicOperationImpl();
 
-//    @BeforeClass
-//    public static void onceExecutedBeforeAll() {
-//        System.out.println("@BeforeClass: onceExecutedBeforeAll");
-//    }
+/*
+    @BeforeClass
+    public static void onceExecutedBeforeAll() {
+        System.out.println("@BeforeClass: onceExecutedBeforeAll");
+    }
 
-//    @AfterClass
-//    public static void onceExecutedAfterAll() {
-//        System.out.println("@AfterClass: onceExecutedAfterAll");
-//    }
+    @AfterClass
+    public static void onceExecutedAfterAll() {
+        System.out.println("@AfterClass: onceExecutedAfterAll");
+    }
+*/
+
 
     @Test
-    public void add() throws Exception {
+    public void squre() {
+        /**
+         * Test squre root
+         */
+        double sqrt = operation.sqrt(9);
+        assertEquals(3.0d, sqrt, 0.01);
+
+        /*sqrt by negative number exception*/
+//        operation.sqrt(-9); // expect an AssertionError
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void add() {
 
         /**
          * Test mod operator
@@ -42,18 +58,7 @@ public class BasicOperationImplTest {
         assertEquals(1, mod);
 
         /*mod by zero exception*/
-        mod = operation.mod(5, 0);
-        assertEquals("Error", mod);
-
-        /**
-         * Test squre root
-         */
-        double sqrt = operation.sqrt(9);
-        assertEquals(3.0d, sqrt, 0.01);
-
-        /*sqrt by negative number exception*/
-        sqrt = operation.sqrt(-9);
-        assertEquals("Error", sqrt);
+        operation.mod(5, 0); // expect an ArithmeticException
 
         /**
          * Test additon
@@ -83,26 +88,28 @@ public class BasicOperationImplTest {
     /**
      * Test divide
      */
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void divide() throws Exception {
         double actualValue = operation.divide(10.0d, 4.0d);
         assertEquals(2.5, actualValue, 0.01);
 
         /*division by zero exception*/
-        actualValue = operation.divide(2.0d, 0);
-        assertEquals("Error", actualValue);
+        operation.divide(9.0d, 0.0d); // expect an IllegalArgumentException
     }
 
-//    @Before
-//    public void executedBeforeEach() {
-//        testList = new ArrayList();
-//        System.out.println("@Before: executedBeforeEach");
-//    }
-//
-//    @After
-//    public void executedAfterEach() {
-//        testList = new ArrayList();
-//        System.out.println("@After: executedAfterEach");
-//    }
+
+/*
+    @Before
+    public void executedBeforeEach() {
+        testList = new ArrayList();
+        System.out.println("@Before: executedBeforeEach");
+    }
+
+    @After
+    public void executedAfterEach() {
+        testList = new ArrayList();
+        System.out.println("@After: executedAfterEach");
+    }
+*/
 
 }
