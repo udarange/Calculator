@@ -49,7 +49,7 @@ public class BasicOperationImplTest {
     }
 
     @Test(expected = ArithmeticException.class)
-    public void add() {
+    public void mod() {
 
         /**
          * Test mod operator
@@ -59,7 +59,10 @@ public class BasicOperationImplTest {
 
         /*mod by zero exception*/
         operation.mod(5, 0); // expect an ArithmeticException
+    }
 
+    @Test
+    public void add() {
         /**
          * Test additon
          */
@@ -71,7 +74,7 @@ public class BasicOperationImplTest {
      * Test subtraction
      */
     @Test
-    public void subtract() throws Exception {
+    public void subtract() {
         double actualValue = operation.subtract(20.1, 10.1);
         assertEquals(10.0d, actualValue, 0.01);
     }
@@ -80,7 +83,7 @@ public class BasicOperationImplTest {
      * Test multiply
      */
     @Test
-    public void multiply() throws Exception {
+    public void multiply() {
         double actualValue = operation.multiply(10.0d, 2.0d);
         assertEquals(20.0d, actualValue, 0.01);
     }
